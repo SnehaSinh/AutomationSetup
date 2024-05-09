@@ -13,10 +13,10 @@ repositories {
 dependencies {
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.17.0'
     implementation group: 'io.cucumber', name: 'cucumber-core', version: '7.17.0'
-    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.17.0'
+    implementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.17.0'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
-    implementation 'tech.grasshopper:extentreports-cucumber6-adapter:2.8.0'
+    testImplementation 'tech.grasshopper:extentreports-cucumber7-adapter:1.14.0'
 }
 dependencies {
     implementation("io.github.bonigarcia:webdrivermanager:5.7.0")
