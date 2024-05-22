@@ -67,51 +67,51 @@ public class LoginSteps {
     }
 
     @Then("verifies the count of entries in the {string} is {int}")
-    public void countOfEntries(String string,Integer numberOfUsers) {
-        Assert.assertEquals(loginPage.getNoOfUsers(),numberOfUsers);
+    public void countOfEntries(String string, Integer numberOfUsers) {
+        Assert.assertEquals(loginPage.getNoOfUsers(), numberOfUsers);
     }
+
     @Then("the user selects checkbox against {string} user from the table")
     public void the_user_selects_checkbox_against_user_from_the_table(String string) throws InterruptedException {
         loginPage.clickCheckBox();
     }
+
     @Then("verifies the user is selected")
     public void verifies_the_user_is_selected() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
     @Then("enters the name of the user in the user name field")
     public void entersSelectedUser() {
 
     }
+
     @When("the user clicks on the {string} and verify the message of the alert is {string}")
-    public void the_user_clicks_on_the(String field,String alertmsg) throws InterruptedException {
-        Assert.assertEquals(loginPage.clickOnAlertButton(field),alertmsg);
+    public void the_user_clicks_on_the(String field, String alertmsg) throws InterruptedException {
+        Assert.assertEquals(loginPage.clickOnAlertButton(field), alertmsg);
         loginPage.acceptAlert();
     }
+
     @And("then accepts the alert")
-    public void acceptAlert(){
+    public void acceptAlert() {
         loginPage.acceptAlert();
     }
+
     @Then("user clicks on the {string} and enters the message {string}")
     public void the_user_accepts_the_alert(String field, String text) throws InterruptedException {
-        loginPage.clickOnPromptAlert(field,text);
+        loginPage.clickOnPromptAlert(field, text);
     }
-    @Then("user determines the number of active links in the page")
-    public void user_determines_the_number_of_active_links_in_the_page() {
 
-    }
-    @Then("then detemines the number of active links in the page")
-    public void then_detemines_the_number_of_active_links_in_the_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+
     @Then("user enters {string} and {string}")
     public void userNamePassword(String username, String password) {
-        loginPage.userNamePassword(username,password);
+        loginPage.userNamePassword(username, password);
     }
+
     @Then("then enters {string} and {int}")
     public void companyMobile(String companyName, Integer mobileNumber) {
-        loginPage.companyMobileDetails(companyName,mobileNumber);
+        loginPage.companyMobileDetails(companyName, mobileNumber);
     }
 
 }

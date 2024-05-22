@@ -10,7 +10,7 @@ Feature: SelectorsHubPracticePage
   Scenario: User enters details on the practice page
     Given the user enters the login information
     Then clicks on submit
-@Test
+
   Scenario Outline: User enter details of the customer in the practice page
     Then user enters "<UserName>" and "<PassWord>"
     And then enters "<CompanyName>" and <MobileNumber>
@@ -39,15 +39,12 @@ Feature: SelectorsHubPracticePage
     Then the user selects checkbox against "admin" user from the table
     And enters the name of the user in the user name field
 
-  @Test
+
   Scenario: Verify the alerts present in the page
     When the user clicks on the "Window Alert" and verify the message of the alert is "Press a button!"
     Then user clicks on the "Window Prompt Alert" and enters the message "Accept or reject the alert"
     And then accepts the alert
 
-  #Scenario:User determines the number of active links
-   # Then user determines the number of active links in the page
-    #And then detemines the number of active links in the page
 
 
 
